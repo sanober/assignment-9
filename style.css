@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: sticky;
+    background: #fff;
+    border-bottom: 2px solid #f0f0f0;
+    padding: 15px 0;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: #838383;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #777777;
+}
+
+.nav-links a.active {
+    color: #ee3b16;
+}
+
+.nav-links a.active:hover {
+    color: #e52d09;
+}
+
+.nav-links a:last-child {
+    margin-right: 0;
+}
+
+.hero-section {
+    background-size: cover;
+    height: calc(100vh - 62px);
+    background-image: url('hero.jpeg');
+    width: 100%;
+    position: relative;
+}
+
+.awards-ribbon {
+    position: absolute;
+    top: 15px;
+    z-index: 20;
+    max-width: 70px;
+}
+
+.settings-gear {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: url('corner.png') no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cog {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 5px;
+    left: 24px;
+    background: url('switcher.gif') no-repeat;
+}
+
+.hero-section-heading h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 1.1;
+    height: 90px;
+}
+
+.flex-col-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-action-btns {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section-action-btns a {
+    display: flex;
+    align-items: center;
+    padding: 20px 55px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 50px;
+    transition: 400ms opacity ease-in-out;
+}
+
+.hero-section-action-btns a:hover {
+    opacity: 0.8;
+}
+
+.hero-section-action-btns a + a {
+    margin-right: 0;
+}
+
+.hero-section-action-btns a.no-border {
+    border: 0;
+}
+
+.hero-section-action-btns a img {
+    max-width: 26px;
+    max-height: 26px;
+    margin-left: 17px;
+}
